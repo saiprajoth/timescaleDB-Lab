@@ -1,6 +1,10 @@
-# TimescaleDB Real-Time Analytics Support Lab
+# TimescaleDB Lab <img width="32" height="32" alt="timescaleDB-Lab-logo" src="https://github.com/user-attachments/assets/c2a4ad22-97ad-45da-8010-9bb512e38c3d" />
+
 
 A PostgreSQL + TimescaleDB support-engineering lab focused on real-time analytics, query optimization, execution plans, indexing, continuous aggregates, compression, retention, and customer-style debugging.
+
+<img width="1916" height="821" alt="a8c64460-fa68-4a89-ac24-bf892afc2e41" src="https://github.com/user-attachments/assets/8e2b1213-2911-46aa-b3e2-5e8e43f40c51" />
+
 
 ## Why this project exists
 
@@ -78,6 +82,11 @@ docs/
 support-cases/
   Customer-style support cases start after performance cases
 ```
+## Architecture Diagrams
+
+<img width="1536" height="1024" alt="timescaleDB-Lab-architecture-diagram" src="https://github.com/user-attachments/assets/451482eb-1f95-442e-803b-84a816d1d4d1" />
+
+<img width="1536" height="1024" alt="imescaleDB-Lab-architecture-diagram-user-pov" src="https://github.com/user-attachments/assets/f6aba10a-e14f-4815-8515-daa3ded6a237" />
 
 ## Current step
 
