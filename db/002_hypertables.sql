@@ -1,0 +1,2 @@
+-- Step 4: Hypertable setup
+-- This file will enable TimescaleDB and convert charger_metrics into a hypertable.

@@ -1,3 +1,4 @@
+
 {
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
@@ -12,19 +13,11 @@
     "lint": {
       "dependsOn": ["^lint"]
     },
-    "check": {
-      "dependsOn": ["^check"]
+    "test": {
+      "dependsOn": ["^test"],
+      "outputs": ["coverage/**"]
     },
     "format": {
-      "cache": false
-    },
-    "db:info": {
-      "cache": false
-    },
-    "docs:check": {
-      "cache": false
-    },
-    "clean": {
       "cache": false
     }
   }

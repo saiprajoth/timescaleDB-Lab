@@ -1,0 +1,11 @@
+{
+  "name": "@timescale-support/scripts",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "echo 'scripts build placeholder'",
+    "lint": "echo 'scripts lint placeholder'",
+    "test": "echo 'scripts test placeholder'",
+    "format": "echo 'scripts format placeholder'"
+  }
+}

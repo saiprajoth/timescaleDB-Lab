@@ -1,0 +1,12 @@
+{
+  "name": "@timescale-support/api",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "go run ./cmd/server",
+    "build": "go build -o bin/api ./cmd/server",
+    "test": "go test ./...",
+    "lint": "go vet ./...",
+    "format": "gofmt -w ."
+  }
+}

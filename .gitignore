@@ -36,32 +36,3 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
-
-
-
-
-
-
-
-
-
-
-# logs
-*.log
-logs/
-
-
-
-
-# OS/editor
-.DS_Store
-.vscode/
-.idea/
-
-# local database/grafana volumes
-.pgdata/
-.timescale-data/
-.grafana-data/
-
-# generated artifacts
-tmp/

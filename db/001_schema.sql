@@ -1,0 +1,7 @@
+-- Step 3: Database schema
+-- This file will define:
+-- stations
+-- chargers
+-- charger_metrics
+-- charging_sessions
+-- alerts

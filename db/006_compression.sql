@@ -1,0 +1,2 @@
+-- Step 11: Compression / columnstore
+-- This file will define compression settings and policies.

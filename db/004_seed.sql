@@ -1,0 +1,2 @@
+-- Step 5: Seed data
+-- This file will generate EV charging telemetry data.

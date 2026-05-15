@@ -1,0 +1,2 @@
+-- Step 9: Indexing v1
+-- This file will define first-pass indexes for analytics workloads.

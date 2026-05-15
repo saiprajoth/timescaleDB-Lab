@@ -1,0 +1,2 @@
+-- Step 12: Retention policy
+-- This file will define raw telemetry retention policies.
