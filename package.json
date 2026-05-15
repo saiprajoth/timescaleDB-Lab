@@ -1,0 +1,16 @@
+{
+  "name": "timescale-support-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TimescaleDB Real-Time Analytics Support Lab for PostgreSQL/TimescaleDB performance debugging, support runbooks, and interview-ready proof artifacts.",
+  "scripts": {
+    "check": "echo 'Step 1 foundation check passed'",
+    "docs:check": "test -f README.md && test -f docs/architecture.md && test -f docs/job-skill-map.md && test -f docs/fox-40-build-plan.md",
+    "tree": "find . -maxdepth 4 -type d | sort",
+    "clean": "rm -rf .turbo node_modules"
+  },
+  "devDependencies": {
+    "turbo": "latest"
+  },
+  "packageManager": "npm@latest"
+}
