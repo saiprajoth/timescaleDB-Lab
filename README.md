@@ -39,11 +39,11 @@ X = Execute step-by-step with commits, scripts, docs, and demos
 
 | Step | Name | Status |
 |---:|---|---|
-| 1 | Repo foundation | In progress |
-| 2 | Docker Compose | Not started |
-| 3 | Database schema | Not started |
-| 4 | Hypertable setup | Not started |
-| 5 | Seed 1M+ rows | Not started |
+| 1 | Repo foundation | Done |
+| 2 | Docker Compose | Done  |
+| 3 | Database schema | Done  |
+| 4 | Hypertable setup | Done  |
+| 5 | Seed 1M+ rows | Done  |
 | 6 | Basic analytics queries | Not started |
 | 7 | Go API | Not started |
 | 8 | Grafana dashboard | Not started |
@@ -99,10 +99,21 @@ Schema begins in Step 3 after Docker Compose and TimescaleDB are running.
 ## Commands
 
 ```bash
-npm install
-make check
-make docs-check
-make tree
+make up
+make db-setup
+make db-timescale
+make db-verify
+make db-verify-timescale
+make seed-small
+make db-counts
+make db-verify-timescale
+
+```
+Then:
+```bash
+make seed-interview
+make db-counts
+make db-verify-timescale
 ```
 
 ## Final target
