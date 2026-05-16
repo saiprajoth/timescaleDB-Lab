@@ -10,10 +10,6 @@ fi
 POSTGRES_USER="${POSTGRES_USER:-postgres}"
 POSTGRES_DB="${POSTGRES_DB:-ev_analytics}"
 
-echo "Applying Step 3 schema to database: ${POSTGRES_DB}"
-
 docker compose exec -T timescaledb \
   psql -U "${POSTGRES_USER}" -d "${POSTGRES_DB}" -v ON_ERROR_STOP=1 \
-  < db/001_schema.sql
-
-echo "Schema applied successfully."
+  < queries/admin/02_table_counts.sql

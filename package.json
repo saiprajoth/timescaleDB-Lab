@@ -1,25 +1,28 @@
 {
-  "name": "timescaledb-lab",
-  "private": true,
-  "packageManager": "npm@latest",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
     "lint": "turbo lint",
     "test": "turbo test",
     "format": "turbo format",
+   
+
+
+
+
+
+
+    "bench": "bash scripts/benchmark/run.sh",
+    "setup:local": "bash scripts/dev/setup-local.sh",
+    "setup:interview": "bash scripts/dev/setup-interview.sh",
     "db:setup": "bash scripts/db/setup.sh",
+    "db:timescale": "bash scripts/db/setup-timescale.sh",
+    "db:verify": "bash scripts/db/verify-schema.sh",
+    "db:verify-timescale": "bash scripts/db/verify-timescale.sh",
+    "db:counts": "bash scripts/db/counts.sh",
     "db:reset": "bash scripts/db/reset.sh",
     "db:psql": "bash scripts/db/psql.sh",
     "seed:small": "bash scripts/seed/seed-small.sh",
-    "seed:interview": "bash scripts/seed/seed-interview.sh",
-    "bench": "bash scripts/benchmark/run.sh"
-  },
-  "devDependencies": {
-    "turbo": "latest"
+    "seed:interview": "bash scripts/seed/seed-interview.sh"
   }
 }

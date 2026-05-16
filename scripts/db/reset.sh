@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "DB reset placeholder. Docker database reset starts in Step 2."
+echo "WARNING: This will remove TimescaleDB and Grafana local volumes."
+echo "Press Ctrl+C to cancel, or wait 3 seconds to continue."
+sleep 3
+
+docker compose down -v
+docker compose up -d
+
+echo "Local stack reset complete."

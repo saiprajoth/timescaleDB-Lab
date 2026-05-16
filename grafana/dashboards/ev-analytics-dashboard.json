@@ -1,0 +1,10 @@
+{
+  "uid": "ev-analytics-overview",
+  "title": "EV Analytics Overview - Placeholder",
+  "tags": ["timescaledb", "ev-analytics", "support-lab"],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "30s",
+  "panels": []
+}

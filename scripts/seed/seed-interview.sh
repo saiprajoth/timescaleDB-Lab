@@ -1,4 +1,19 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "1M+ interview seed placeholder. Seed data starts in Step 5."
+if [ -f .env ]; then
+  set -a
+  source .env
+  set +a
+fi
+
+POSTGRES_USER="${POSTGRES_USER:-postgres}"
+POSTGRES_DB="${POSTGRES_DB:-ev_analytics}"
+
+echo "Seeding interview dataset..."
+echo "Expected charger_metrics rows: 1,008,000"
+echo "This can take a little time locally."
+
+docker compose exec -T timescaledb \
+  psql -U "${POSTGRES_USER}" -d "${POSTGRES_DB}" -v ON_ERROR_STOP=1 -v seed_days=35 \
+  < db/004_seed.sql

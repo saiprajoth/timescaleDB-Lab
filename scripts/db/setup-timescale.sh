@@ -10,10 +10,10 @@ fi
 POSTGRES_USER="${POSTGRES_USER:-postgres}"
 POSTGRES_DB="${POSTGRES_DB:-ev_analytics}"
 
-echo "Applying Step 3 schema to database: ${POSTGRES_DB}"
+echo "Applying Step 4 TimescaleDB hypertable setup..."
 
 docker compose exec -T timescaledb \
   psql -U "${POSTGRES_USER}" -d "${POSTGRES_DB}" -v ON_ERROR_STOP=1 \
-  < db/001_schema.sql
+  < db/002_hypertables.sql
 
-echo "Schema applied successfully."
+echo "TimescaleDB hypertable setup complete."
